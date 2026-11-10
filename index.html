@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mir App &#8211; Android developer</title>
+<meta name="description" content="Android applications by Mir App. A list of my apps with links to Google Play and privacy policies.">
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --text: #1c2130;
+    --muted: #6b7280;
+    --border: #e4e7ec;
+    --accent: #3b6cf6;
+    --accent-dark: #2d55c7;
+    --radius: 16px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Header */
+  .site-header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .site-header .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .brand {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .tagline {
+    margin: 0;
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  /* Intro */
+  main { padding: 40px 0 24px; }
+
+  h1 {
+    margin: 0 0 14px;
+    font-size: 28px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+
+  main p { margin: 0 0 14px; }
+
+  .stores {
+    margin: 26px 0 0;
+    padding: 18px 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+
+  .stores p { margin: 0 0 14px; font-size: 15px; }
+
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+    background: var(--accent);
+    color: #fff;
+    border: 1px solid transparent;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .btn:hover { background: var(--accent-dark); }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--text);
+    border-color: var(--border);
+  }
+
+  .btn-ghost:hover {
+    background: #f0f2f5;
+    color: var(--text);
+  }
+
+  /* App list */
+  .section-title {
+    margin: 40px 0 16px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .app-list {
+    display: grid;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .app-card {
+    padding: 20px 22px 22px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+
+  .app-card h2 {
+    margin: 0 0 6px;
+    font-size: 19px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  .app-card .lang {
+    margin: 0 0 18px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Footer */
+  .site-footer {
+    margin-top: 48px;
+    padding: 24px 0 40px;
+    border-top: 1px solid var(--border);
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .site-footer p { margin: 0 0 6px; }
+
+  .site-footer a { color: var(--accent); text-decoration: none; }
+  .site-footer a:hover { text-decoration: underline; }
+
+  @media (min-width: 600px) {
+    h1 { font-size: 32px; }
+    .wrap { padding: 0 24px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">Mir App</a>
+    <p class="tagline">Android developer</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <h1>Hi, I&#8217;m a developer.</h1>
+    <p>Here is a list of my applications, as well as links to Google Play.</p>
+
+    <div class="stores">
+      <p>Link to my store (some apps may not be available because they were made for a specific region):</p>
+      <a class="btn" href="https://play.google.com/store/apps/dev?id=7773122482640934669" rel="noopener">Google Play</a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Applications</h2>
+
+    <ul class="app-list">
+      <li class="app-card">
+        <h2>Battery health</h2>
+        <p class="lang">Language: English, Russian</p>
+        <div class="actions">
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.battery.health.pro" rel="noopener">Google Play</a>
+          <a class="btn btn-ghost" href="https://mirappprivacypolicy.wordpress.com/battery-health/" rel="noopener">Privacy Policy</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer wrap">
+  <p>Contact: <a href="mailto:App_Mir@mail.ru">App_Mir@mail.ru</a></p>
+  <p>&#169; Mir App</p>
+</footer>
+
+</body>
+</html>
